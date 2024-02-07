@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute, relative, fixed, sticky</title>
+    <style>
+        .container{
+            border:2px solid black;
+            background-color:khaki;
+            height:4000px;
+        }
+        /* Position:static(default), relative, fixed, sticky */
+        .box{
+            display:inline-block;
+            border:2px solid red;
+            width: 150px;
+            height: 150px;
+            margin:2px;
+          }
+          #box3{
+            /* relative: relative to its normal position and will leave a
+             gap at its normal position we can give  top bottom right left margin
+             (agar poorani position main gap chahiye to position to relative) */
+              /* position:relative;  */
+
+              
+             /* absolute: relative to the position of its first parent.. we can move a box */
+              /* position:absolute;  */
+              /* top:34px;
+              left:34px; */
+              /* fixed:positions the elements relative to the browser window; */
+              /* position: fixed; 
+              right: 4px;
+              bottom:2px; */
+              position: sticky; /* this is the sticky position*/
+              top: 3px;
+
+
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="box" id="box1">1</div> 
+   <div class="box" id="box2">2</div> 
+   <div class="box" id="box3">Chat With Us</div> 
+   <div class="box" id="box4">4</div> 
+   </div>
+</body>
+</html>

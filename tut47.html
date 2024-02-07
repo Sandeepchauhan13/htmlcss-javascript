@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, and if else conditions</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        // this is redeclaration in case of var 
+        console.log(string1)
+
+        // let is better alternative to var, so you use let instead of var redeclaration is not allowed 
+        // it will show error when declaring it more time
+        // let a = "u";
+        // let a = "u6";
+        // {
+        // let a = "u6;"
+        // }
+
+        // inside block same name variable can be created 
+        // let a = "u";
+        // {
+        // let a = "u6";
+        // console.log(a)
+        // }
+        // console.log(a)
+
+        //    constant value cannot be changed
+        // const a = "This cannot be changed";
+        // a = "I want to change this. This cannot be changed";
+        // console.log(a);
+
+        // looops first of all if else with example these conditions can be used in case of email if @ is not there then not allow
+        let age = 2;
+        if (age > 18) {
+            console.log("You are Adult");
+        }
+        else if (age == 2) {
+            console.log("Your age is 2");
+
+        }
+        else {
+            console.log("You are minor");
+        }
+
+
+        // switch case statementin this example i using integer esme ek string bhi ho sakta hai------
+        const cups = 4`;
+        switch (cups)
+         {
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+                
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+
+            case 43:
+                console.log("The value of cups is 43");
+                break;
+
+        
+            default:
+                console.log("The value of cups is none of these");
+                break;
+        }
+    </script>
+</body>
+
+</html>

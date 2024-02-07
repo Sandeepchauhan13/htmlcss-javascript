@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+Mahajani&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* main use of before and after pseudo selector is show text in the image back ground or other background by using z-index:-1-(use to view text) */
+        /* opacity:0.5; ---> is used to light the image  */
+        body{
+            margin:0px;
+
+            padding:0px;
+
+            background-color:yellow; 
+
+            color:white;
+            
+            /* background:url('https://source.unsplash.com/random')no-repeat center center/cover;  */
+        }
+        header::before{
+            background:url('https://source.unsplash.com/random')no-repeat center center/cover;
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            /* z-index is used to view text agar image header:before karke show n ho  */
+            /* opacity:.5 image ko light karne ke liye  */
+            z-index:-1;
+            opacity:0.3;
+        }
+        .navigation{
+            display:flex;
+        }
+        .item{
+            color:black;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        h1{
+            font-size:4rem;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        p{
+            text-align: center;
+        }
+    section{
+        margin:3px 23px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        font-family: 'Nanum Myeongjo', serif;
+        /* border:2px solid red; */
+        justify-content: center;
+         /*vertically content ko center karne ke liye*/
+        align-items:center;
+        height:344px;
+        
+    }
+    section h3{
+        font-size:3rem;
+    }
+    section p{
+        font-size: 30px;
+        /* border:2px solid red; */
+    }
+    section::before{
+        content:"this is a content"
+        
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur
+adipisicing elit. Veritatis quam facere, ducimus illo placeat voluptate cupiditate ut at aliquam saepe!
+            </p>
+        </section>
+        <!-- <hr>
+    </hr> -->
+</body>
+
+</html>

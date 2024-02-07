@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        This is my javascript object notation tutorial
+    </div>
+    <script>
+        // #object is converted into string  and then either we can transport and make changes---
+        let jsonobj={
+            name:"harry",
+            channel:"Cwh",
+            friend:"rohan das",
+            food:"bhindi"
+        }
+        console.log(jsonobj);
+
+        // #convert object into string---
+        let myJsonStr = JSON.stringify(jsonobj);
+        console.log(myJsonStr);
+
+        // #replace string elements----
+       myJsonStr= myJsonStr.replace('harry','Sandeep');
+       console.log(myJsonStr);
+
+    //    #convert string into object--
+       newjsonobj=JSON.parse(myJsonStr);
+       console.log(newjsonobj);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* element selector */
+        p{
+            border:2px solid red;
+        }
+        /* id selector */
+        #firstpara{
+            color:pink;
+        }
+        /* class selector */
+        .redelement{
+            color:yellow;
+            background-color:blue;
+        }
+        /* group selector */
+        footer,span{
+            background-color:green;
+        }
+        /* This is a comment  */
+        
+    </style>
+
+
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara">This is the simple paragraph  to demonstrate internal css</p>
+    <p id="secondpara" class="redelement bgBlue">This is the simple paragraph  to demonstrate internal css</p>
+    <!-- class can be selected through redelement or bgBlue there more than one class-->
+    <p>This is the simple paragraph  to demonstrate internal css</p>
+    <!-- class is used to color all the paragraph..  #id  is used to color single line just line this  -->
+    <p>This is the simple paragraph  to demonstrate internal css</p>
+    <p id="secondpara"> this is the simple paragraph  to demonstrate internal css</p>
+    <div><p>This is the simple paragraph  to demonstrate internal css</p>
+    <span>this is a span tag</span>
+</div>
+    <footer>This is Footer</footer>
+</body>
+</html>

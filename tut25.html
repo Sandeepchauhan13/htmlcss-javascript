@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* media query is used to add specific css when screen will resize  */
+        /* media query work like if condition  */
+        .box{
+            background-color: red;
+            color: white;
+            font-size: 92px;
+            text-align: center;
+            display:none;
+        }
+        @media (max-width:300px){
+            /* min is not defined then apneap hi 0 minimum lega -- */
+            #box1{
+                display:block;
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width:300px) and (max-width: 500px){
+            #box2{
+                display:block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px){
+            #box3{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        
+        @media (min-width: 800px){
+            #box4{
+                display: block;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Main ek iphone hon</div>
+    <div class="box" id="box2">main ek tablet hon</div>
+    <div class="box" id="box3">main  ek computer hon</div>
+    <div class="box" id="box4">main ek widescreen computer hoon</div>
+</body>
+</html>

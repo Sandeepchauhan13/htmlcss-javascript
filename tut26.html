@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors</title>
+    <style>
+        h1{
+            background-color:red;
+            color:white;
+            text-align: center;
+            border:2px solid black;
+        }
+        /* div li p{
+            color:yellow;
+            font-weight:italic;} if p is contained by any li which is contained by div  */
+            
+            /* div p{
+                  color:green;
+                  font-weight:italic;
+            }  */
+       div >  p{
+                color:yellow;
+                font-weight:italic;
+            } 
+            /* div k jo direct child hogi ussi par lago hoga div>  */
+        /* div+p{
+            color:aquamarine;
+            font-weight:italic; jiska pichla sibliing div ho uss par property apply
+        } p is the next sibling of div uss par effect hoga  */
+        
+    </style>
+</head>
+<body>
+    <h1>More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p> This is another paragraph</p></li>
+                <li>this wil not get affected</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

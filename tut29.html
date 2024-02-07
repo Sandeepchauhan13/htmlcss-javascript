@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 10px;
+            border: 2px solid red;
+            background-color: bisque;
+            /* box-shadow: offset-x offset-y color; syntax */
+            /* box-shadow: offset-x offset-y blur radis spread radius color; syntax */
+            /* box-shadow: 10px 13px 4px rgb(78, 209, 78); */
+            /*4px is blur radius 
+            and postive value niche shadow negative values upar shadow*/
+            /* box-shadow: 10px  13px 4px 10px green; 10px is spread radius */
+            /* box-shadow:inset 3px 5px green; */
+            box-shadow: 13px 15px green, 24px 36px yellow;
+            /* box shadow is use to render box on website without displaying any space so it is helpful */
+        }
+        .card h2{
+            text-shadow:2px 3px yellow;
+            /* text-shadow offset and colour these three values  */
+            /* text-shadow:2px 3px 4px yellow; blur included in this  */
+            /* if text is not shown clearly u can use text shadow to view more  professional */
+            /* if the color of background of box and text same then we can use text shadow then text can be visible */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is Css Course</h2>
+            <p>Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Dignissimos neque facere, placeat rerum ducimus recusandae!
+            </p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is javascrip course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is webdevelopment course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quam.</p>
+        </div>
+    </div>
+</body>
+
+</html>

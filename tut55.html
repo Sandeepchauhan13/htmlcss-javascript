@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time javascript</title>
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: blanchedalmond;
+        border:2px solid grey;
+        padding:34px;
+        margin:5px;
+        text-align: center;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date  and time tutorial");
+        // #current date and time
+        let now = new Date();
+        console.log(now);
+
+        // #reference time ist ka 1970 main date constructor
+        let now1 = new Date(0);
+        console.log(now1);
+
+        // #format can be change of date
+        let newDate = new Date("2023-09-22");
+     console.log(newDate);
+     
+    //  let newDate = new Date(year,month,date,hours, minutes, seconds, milliseconds);
+    let newDate1 = new Date(2023,9,13,9,3,2,34);
+    console.log(newDate1);
+
+    let yr = newDate.getFullYear();
+    console.log("The year is", yr); 
+    
+    let dt = newDate.getDate();
+    console.log("The date is", dt); 
+    
+    let month = newDate.getMonth();
+    console.log("The month is", month); 
+    
+    let day = newDate.getDay();
+    console.log("The hour is", day);
+
+    // #setnew Date 
+    newDate.setDate(15);
+    console.log(newDate);
+
+
+    // #project to show time date in your website
+    setInterval(updateTime, 1000);
+
+    function updateTime(){
+     time.innerHTML = new Date();
+    }
+   
+    // let hours = newDate.getHours();
+    // console.log("The hour is", hours); 
+    
+    // let hours = newDate.getHours();
+    // console.log("The hour is", hours);
+
+    </script>
+</body>
+</html>

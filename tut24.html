@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website font size units</title>
+    various ways to achieve  responsive design.
+    1. setting up the viewport.
+    2. use max-width/max height.
+    3. using css media queries.
+    4.using rem/vh/vw units over pixels
+    <style>
+        html{
+            font-size:25px;
+        }
+        .container{
+            /* width:300px; */
+            width:100vw;
+            /* 100vw means complete width of the screen 0 -100%*/
+            /* height:3000px; */
+            height:100vh;
+            /* 100vh view port height poori height lega screen ke size ki 0-100% */
+            font-size:10px;
+            border:2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        #First{
+            /* font-size:4em; */
+            /* by default 2em hoti hai font-size  */
+            /* 4em means four times the size of container font-size = 10*4=40px */
+            /* padding:3em; */
+            /* padding 3em multiply by font size which is 40px*3=120px; */
+        }
+        #Second{
+            /* font-size:3rem; */
+            /* padding:3rem; */
+            /* rem always runs relative to font size of this
+             html tag (fontsize and padding=25*3=75)   */
+             /* rem is used to enhance the size of complete website by making changes only in one  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="First"> This is first heading</h1>
+        <h1 id="Second"> This is second heading</h1>
+        <h1 id="Third"> This is third heading</h1>
+    </div>
+</body>
+</html>

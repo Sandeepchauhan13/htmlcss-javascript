@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+        box-sizing:border-box;
+        }
+        .container{
+            background-color:black;
+            width:900px;
+            border:3px solid purple;
+            margin:33px auto;
+            /* margin auto to bring the content center------ */
+
+        }
+        .item{
+        border:3px solid green;
+        margin:12px 3px;
+         /* padding: y(top/bottom) x(left/right); */
+        padding:12px 3px;
+        background:rgb(7, 126, 159);
+        }
+        #fruit{
+            float:left;
+            width: 48%;
+        }
+        #computer{
+             float:right; 
+            width: 48%;
+        }
+        #stationary{
+            clear:right;
+            /* clear:both; na left na right no element will overlap */
+            /* float:left; */
+            width:100%;
+        }
+        p,h1{
+            text-align:center;
+            /* text-align:right; */
+            /* text-align:left; */
+            /* text-align:justify; */
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container";>
+    <div id="fruit" class="item">
+        <h3>fruit</h3>
+        <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed, sunt laudantium animi qui nostrum. Ex provident
+             obcaecati accusamus consequuntur rem odit excepturi illum expedita,Lorem ipsum dotam debitis dicta velit officiis. Illum, maxime. repellat explicabo, nesciunt possimus. Fugit!</p>
+       </div>
+       <div id="computer" class="item">
+        <h3>Computer</h3>
+        <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam illo rem iste laborum, perspiciatis dolores nam? 
+            Odio enim voluptate tempore adipisci consectet voluptas molestias sequi incidunt ipsa. adipisicing elit. Ullam rerum reprehenderit fuga voluptatem ea, magni corrupti, veniam temporibus rem molestias provident veritatis dolorem obcaecati quisquam officiis aliquid sed facilis? Consequuntur.</p>
+       </div>
+       <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus qui, nihil odio, nisi maiores
+             exercitationem asperiores beatae inventore amet impedit quibusdam eos eius quam ex quae corporis possimus facere?</p>
+       </div>
+       <div id="glass" class="item">
+        <h3>glass  para</h3>
+        <p id="glasspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id amet fugit reiciendis. Nulla itaque dolorem, praesentium blanditiis dolor dolores
+             quod provident nostrum fuga, ullam quisquam natus eveniet eos cumque quaerat, labore debitis optio distinctio.</p>
+       </div>
+
+    </div>
+</body>
+</html>

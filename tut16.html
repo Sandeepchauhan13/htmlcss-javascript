@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        * {
+         box-sizing:border-box;
+         margin:0px;
+         padding:0px;
+         /* all the margin and padding will be 0 unless we change  it from the bottom */
+        }
+        #alldiv{
+            display:flex;
+            /* display:inline-block; */
+            flex-wrap:wrap;
+        }
+        .container{
+            background-color:white;
+            border: 3px solid blue;
+            /* flex-wrap:wrap; */
+            /* margin-top:3px;
+            margin-bottom:4px;
+            margin-left:5px;
+            margin-right:7px;  we can set top bottom left right like this */
+            /* we can set padding from top left bottom right like this */
+            /* padding-top:79px;
+            padding-bottom:79px;
+            padding-left:30px; */
+           /* padding : 23px 56px 60px 78px; padding = top right bottom left; remember trbl */
+          padding:34px 49px; 
+          /* padding: y(top/bottom) x(left/right); */
+            margin: 14px 19px;
+            border-radius:23px;
+            width:533px;
+            box-sizing:border-box;
+            }
+    </style>
+</head>
+<body>
+    <div id="alldiv">
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius suscipit, 
+            praesentium vitae labore eligendi, tenetur aut deserunt officiis, fugit sunt mollitia error enim te
+            mpora nesciunt. Impedit, voluptatem. Dolorum numquam vitae repellat illum eum, temporibus odit.
+             Nisi illo cum distinctio temporibus!</p>
+             </div>
+             <div class="container">
+                <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius suscipit, 
+                praesentium vitae labore eligendi, tenetur aut deserunt officiis, fugit sunt mollitia error enim te
+                mpora nesciunt. Impedit, voluptatem. Dolorum numquam vitae repellat illum eum, temporibus odit.
+                 Nisi illo cum distinctio temporibus!</p> </div>
+                 <div class="container">
+                    <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius suscipit, 
+                    praesentium vitae labore eligendi, tenetur aut deserunt officiis, fugit sunt mollitia error enim te
+                    mpora nesciunt. Impedit, voluptatem. Dolorum numquam vitae repellat illum eum, temporibus odit.
+                     Nisi illo cum distinctio temporibus!</p> </div>
+    </div>
+</div>
+</body>
+</html>

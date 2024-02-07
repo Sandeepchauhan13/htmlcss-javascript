@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color:black;
+            border-radius: 5px;
+
+        }
+        .navbar ul{
+         overflow:auto; /*when float:left color is not visible it is out of parent then overflow auto*/
+         
+        }
+        .navbar li{
+        margin:11px 3px;
+        float:left;
+        list-style: none; /*to remove bullets with  list*/
+        }
+        .navbar li a{
+            padding:3px 3px;
+            text-decoration:none;
+            color:white;
+        }
+        .navbar li a:hover{
+            color:brown;
+            background: red;
+        }
+        .search{
+            float:right;
+            border:2px solid black;
+            margin-top: 10px;
+            margin-right:20px;
+            border-radius: 10px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding:3px 4px;
+            width:164px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</li></a>
+                <li><a href="#">About</li></a>
+                <li><a href="#">Services</li></a>
+                <li><a href="#">Contact Us</li></a>
+             <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search  this website">
+             </div>   
+                
+            </ul>
+        </nav>
+    </header>
+    
+    
+</body>
+</html>

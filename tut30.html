@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSs variable/custom properties</title>
+</head>
+<style>
+    /* root ke andar jo bhi custom properties hai main sab jagh access kr sakte hen  */
+    :root{
+        --primary-color: rgb(255, 0, 200);
+        --danger-color: red;
+        --maxw:333px;
+    }
+    .container{
+        display:flex;
+        margin:auto;
+        max-width: var(--maxw);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--box-color);
+    }
+    .box{
+        /* --box-color:violet; */
+        /* declaring variable */
+        /* background-color: var(--box-color); */
+        width:200px;
+        height:100px;
+        /* background-color:aqua; */
+        display:flex;
+         background-color: var(--primary-color); 
+        border:2px solid var(--danger-color);
+        /* box-shadow: 6px 9px var(--box-color); */
+        margin:2px 4px;
+        padding:4px;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>box1</h2>
+        </div>
+        <div class="box">
+            <h2>box2</h2>
+        </div>
+        <div class="box">
+            <h2>box3</h2>
+        </div>
+    </div>
+</body>
+</html>

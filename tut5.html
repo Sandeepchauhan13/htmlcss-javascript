@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>form in html </title>
+   
+</head>
+<body>
+    <h2>Learning Software Development </h2>
+    <div class="form">
+    <form action="backup.php">
+        
+        <div><label for="name">Name</label>
+            <!-- div esliye lgaya hai agle element ko niche jana hota hai-------- -->
+        <input type="text" name="myname" id="name">
+        <!-- label for name is same name then mention id with the same  name of label -->
+    </div>
+    <div>
+        Role:<input type="text" name="myrole">
+    </div>
+
+    <!-- we can br tag to appear form values in other line br is 
+        not recommended  and we use div for better appearance-->
+        <!-- input type is kya input dena hai or name is the name backend identity karega name s -->
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="myemail" id="email">
+    </div>
+    <div>
+        Date:<input type="date" value="mydate">
+     </div>
+    <div>
+        Bonus:<input type="number" name="mybonus">
+        <!--- type=number main number allowed and e alphabet-->
+    </div>
+    <div>
+        Are you eligible:<input type="checkbox" name="myeligibility">
+        <!--checked is the property that already needed checked-->
+    </div>
+    <div>
+        Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+        other: <input type="radio" name="mygender">
+    </div>
+    <div>
+        Write  about yourself:<br><textarea name="myText" col="120" row="800"></textarea> </br>
+    </div>
+    <div>
+        <label  for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="lnd">landrover</option>
+            <option value="swt">Swift</option>
+        </select>
+    </div>
+    <div>
+        Reset:<input type="reset" name="Reset">
+        Submit:<input type="Submit" value="Submit now">
+    </div>
+</div>
+</form>
+</body>
+</html>

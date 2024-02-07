@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to Events</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        border-radius: 8px;
+        color: red;
+        border: 2px solid blue;
+        background-color: aquamarine;
+        font-weight: bold;
+
+    }
+
+    #btn:hover {
+        color: brown;
+    }
+</style>
+
+<body>
+    
+    <!-- Browser events:
+  click
+  contextmenu
+  mouseover/mouseout 
+  mousedown/mouseup
+  mousemove
+  
+  submit
+  focus
+  Domcontentloaded -->
+    <div class="container">
+        <h1>This is My Heading</h1>
+        <p id="para">Lorem, quo am? agni, repudiandae ratione quam expedita hic, tempora fugit asperiores quidem ipsum
+            debitis quis tempore ipsa ad minus libero necessitatibus odit explicabo maiores! Totam, temporibus
+            laboriosam. Illo enim distinctio minima cum, quaerat earum quas quod omnis provident nemo officia corrupti
+            deleniti eligendi dolorem, eius cumque aspernatur pariatur fugiat velit dicta? Explicabo nobis iure officia.
+            Eum, nemo. Enim consequuntur aliquid soluta itaque cupiditate modi explicabo nisi aperiam dolore aspernatur.
+            Ab laudantium labore quas similique exercitationem praesentium earum voluptatibus saepe fugit est,
+            laboriosam vero enim non sequi expedita, perspiciatis aspernatur aliquid libero impedit amet! Repellat
+            nesciunt culpa sit a expedita, minus vel maiores aspernatur nemo. Fugit optio officia repudiandae sequi
+            dolorem cum eveniet repellendus nihil ipsa iusto, blanditiis nisi animi exercitationem, odit voluptatum
+            quas? Maxime, fugiat minima. Soluta laudantium facere maiores aliquam pariatur consequuntur tempore alias
+            eos temporibus quibusdam, assumenda ut itaque cupiditate nisi officiis! Itaque qui saepe aut, sed nostrum ex
+            nam voluptatum delectus, vitae dolor expedita. Ad nisi minima, beatae reprehenderit at enim quasi assumenda
+            odio! Mollitia obcaecati neque, dolorem velit corrupti tenetur illo ullam aliquid, rerum ducimus asperiores
+            voluptatem porro ab nemo itaque accusamus at facere officia consectetur laudantium. Quibusdam, ea corrupti
+            magni molestiae voluptates quo consequatur tempore porro dolor odio alias! Repellat aut inventore libero
+            doloremque quo nobis dolorem sit, dignissimos saepe officia sunt assumenda tempore! Rerum iste quia, facilis
+            minima esse quae enim atque rem fugit quis deleniti obcaecati ullam libero voluptas fuga consectetur beatae
+            autem labore amet! Debitis eaque illum beatae necessitatibus animi cum! Sint quisquam doloribus nisi
+            repellendus excepturi quod dolores. Illo quisquam quaerat quibusdam quas excepturi ex repellat cum nulla.
+            Enim quisquam ut sed, possimus similique mollitia sint eius modi! Odit ad repudiandae obcaecati facere
+            molestias nesciunt, vitae tempora veritatis! Libero reiciendis cupiditate magni molestiae ad veritatis sequi
+            sed, iste aperiam, dolores neque id ducimus quisquam. Dolor necessitatibus consequuntur dicta tenetur harum
+            sint vel quis explicabo qui blanditiis enim fuga dolores, consectetur inventore ad consequatur optio nisi
+            impedit provident ea debitis excepturi corporis temporibus ipsa! Officia aspernatur quas repudiandae nam,
+            illo praesentium esse nemo numquam natus sequi, enim id! Eaque distinctio voluptatem voluptatibus suscipit
+            reprehenderit quisquam, pariatur ratione maiores esse? Id aliquam et, sunt voluptatibus ratione asperiores
+            commodi vero numquam, quas reprehenderit distinctio sint libero animi sequi aspernatur error itaque tempora
+            voluptates autem officia recusandae. Doloribus, et? Error sunt ea sit quasi? Vitae error aut nam illum
+            labore est molestiae ipsam odit similique totam natus sapiente in dolore quis quaerat perspiciatis veniam
+            culpa reprehenderit rem, dolorum excepturi a, impedit omnis deserunt? Accusamus, architecto? Iure adipisci
+            corrupti velit odio maxime nemo voluptate tempore dolore, consequatur quisquam sed quia quibusdam magni
+            dicta obcaecati aut. Ad, eligendi!
+        </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function run(){
+     console.log("mouse inside");
+    });
+    para.addEventListener('mouseout', function run(){
+     console.log("mouse outside");
+    });
+
+
+// #hide and show paragraph...
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

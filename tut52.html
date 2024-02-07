@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        
+<!-- ul>li*5 this is emmet to do this type of menu -->
+        <ul id="nav">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>More About Us</li>
+        <li>Contact Us</li>
+       </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        // dom ko manipulate and navigate method
+        console.log(main);
+
+
+        let nav = document.getElementById('nav');
+        // nav ke andar ki html ko change kar sakta  hon
+        console.log(nav);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers)
+
+        // #css selectors
+        // let sel = document.querySelector('#nav>li');
+        // console.log("Selector returns", sel)
+         let sel = document.querySelectorAll('#nav>li');
+        console.log("Selector returns", sel)
+
+
+       
+
+
+    </script>
+</body>
+</html>

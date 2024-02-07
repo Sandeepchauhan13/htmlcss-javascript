@@ -1,0 +1,10 @@
+.container{
+    text-align: center;
+
+}
+#box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    margin: 5px auto;
+}

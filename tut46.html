@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript sting funtions</title>
+</head>
+
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        // first occurance of a substring
+        var position = str.indexOf('is');
+        // str.indexOf main O is capital otherwise error array index start from zero
+
+        // last occurance of a substring dont need to write var again and again
+        // position = str.lastIndexOf('is');
+        // console.log(position)
+
+        // substring from a String here we can not use negative values 
+        // var substr = str.slice we can negative values for this 
+        // var substr = str.substring(1,7);
+
+        // slice funtion
+        // var substr = str.slice(1, 7);
+        // start and last position
+        // one to five tak print 
+        var substr1 = str.substr(0, 8);
+        // in this str.substr(0, starting point 8 means end point)
+          console.log(substr1)
+
+        // if we want to replace a string  or substring
+        // var str = "This is  a string";
+       
+
+        // porani string ese h rahegi new string create hogi
+        // var replaced= str.replace('string', 'Harry');
+        // console.log(str)
+        // console.log(replaced)
+        
+
+        // Uppercase
+        // console.log(str.toUpperCase());
+
+        // Lowercase
+        // console.log(str.toLowerCase());
+
+        // concat method to join to string either we can + operator to concat
+        var newString = str.concat('New String')
+        console.log(newString)
+
+
+        // trim function trim white spaces from starting and end
+        // var strWithWhitespaces = "     this contains      whitespacess       ";
+        // console.log(strWithWhitespaces)
+        // console.log(strWithWhitespaces.trim())
+
+        // to extract a character from a string 
+        var char2 = str.charAt(2);
+        console.log(char2)
+
+        // to extract character code utf 16 character code not very imp 
+        // var char2 = str.charCodeAt(2);
+        // console.log(char2)
+
+        // this is slicing of string
+        // console.log(str[3])  
+
+    </script>
+</body>
+
+</html>

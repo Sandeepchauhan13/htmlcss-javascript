@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Alert, Prompt Confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a Page
+    </div>
+    <script>
+        //#Alert in  in-browser javascript just ok opens model window...doesnot return anything
+        // alert("This is a message");
+
+
+        // #this is prompt in this we type anything
+        // let name = prompt("What is your name?", "Guest");
+        // console.log(name);
+
+
+
+        // #deletepost box confirm use hota hai to delete something
+        // let deletePost = confirm("Do you really want to delete this post");
+
+        // if(deletePost){
+        //     console.log("Your post has been deleted successfully")
+
+        // }
+        // else{
+        //     console.log("your post has not been deleted")
+        // }
+        // console.log(deletepost)
+
+        // #age alert box
+        let age=prompt("Enter your age", "age");
+        if(age>18){
+            alert("your are allowed");
+            console.log("welcome");
+
+        }
+        else{
+            alert("you are not allowed");
+            console.log("access denied");
+        }
+</script>
+</body>
+</html>
